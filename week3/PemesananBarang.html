@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .listsampingkiri{
+        float: left;
+        list-style-type:none;
+        padding: 15px;
+    }
+    .listsampingkanan{
+        float: right;
+        list-style-type:none;
+        padding: 10px;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pesan Barang</title>
+</head>
+<body>
+       
+<div style ="margin:auto ; width: 50%;">
+            <div style="background-color: lightgray;">
+                        <ul style="	padding: 0;margin: 0;overflow: hidden;">
+                            <li class="listsampingkiri"><a href="#">Home </a> | </li>
+                            <li class="listsampingkiri"><a href="#">Register </a> | </li>
+                            <li class="listsampingkiri"><a href="#">Transaction History </a> | </li>
+                            <li class="listsampingkiri"><a href="#">Policy </a> | </li>
+                            <li class="listsampingkanan"><a href="#">Logout</a></li>
+                        </ul>
+            </div>
+</div>
+    <div class="sidebar" style="   margin-top: 4%;float: left;	width: 25%;height: 60%;" >
+            <div class="tablesummary" style="padding-left: 9px;text-align: center;">
+                  <img src="macbookair.jpg" alt="" width="200"><br>
+                  <div style="margin-top: 20px; text-align: center;">
+                  <input type="submit" value="Upload Picture">
+                  </div>
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+        <form action="InputPesan.html" method="POST">
+        <table border="0" cellspacing = "10">
+            <tr>
+                <td>
+                    <label >Title Here</label>
+                </td>
+                <td>
+                    <input type="text" name="Title" size="42">
+                </td>
+            </tr>
+            <tr>
+            <td>
+                    <label >Description</label>
+                </td>
+                <td>
+                    <textarea name="Descrip" id="" cols="40" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                    <label >Account Number</label>
+                </td>
+                <td>
+                    <input type="text" name="AccNum" size="42">
+                </td>
+            </tr>
+            <tr>
+            <td>
+                    <label >Bank</label>
+                </td>
+                <td>
+                <select name="Bank" style="width: 318px;">  
+                    <option value = "HSBC"> HSBC</option>
+                    <option value = "Mandiri"> Mandiri </option>
+                    <option value = "Bni"> BNI</option> 
+                    <option value = "BCA"> BCA</option> 
+                </select>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                    <label >Account Holder</label>
+                </td>
+                <td>
+                <input type="text" name="AccHol" size="42">
+
+                </td>
+            </tr> 
+            <tr>
+            <td>
+                    <label >Transaction</label>
+                </td>
+                <td>
+                    <input type="number" name="Trans" style="width: 40px;">
+                    <i>How many do you want for transaction</i>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                </td>
+                <td>
+                    <p>"if Transaction is for 3 person, choose 3 from the drop-down list</p>
+                </td>
+            </tr>
+            <tr>
+            <td></td>
+                <td>
+                    <div style="color: green;">
+                          <input type="checkbox" id="Top1" name="MobOrEmail[]" value="Red Sauce">
+                          <label for="Top1"> Send To Mobile Phone</label>
+                            <br>
+                          <input type="checkbox" id="Top2" name="MobOrEmail[]" value="White Sauce">
+                          <label for="Top2">Send To Email</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Send To Mobile Phone</label>
+                </td>
+                <td>
+                    <input type="text" name="MobPhone" size="42">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Send To email</label>
+                </td>
+                <td>
+                    <input type="email" name="mail" size="42">
+                </td>
+            </tr>
+        </table>
+        <div style="text-align: center;">
+        <input type="submit" style="background-color: green; color: white;" value="Generate Nabr Link">
+
+        </div>
+    </form>
+        
+        </div>
+        <hr>
+        <div class="footer" style="    background-color: darkslategray;margin-top: 40px;padding: 20px 10px;">
+            <div class="clear"></div>
+            <div class="footer">
+                <div class="menufoot">
+                    <ul class="navigation-footer">
+                        <li class="listsampingkiri">FullSite</li>
+                        <li class="listsampingkiri">
+                            <a href="https://shopee.co.id/" target="_blank">Category X</a>
+                          </li>
+                          <li class="listsampingkiri">
+                            <a href="https://www.tokopedia.com/" target="_blank">Category Y</a>
+                          </li>
+                          <li class="listsampingkiri">
+                            <a href="https://www.lazada.co.id/" target="_blank">Category Z</a>
+                          </li>
+                    </ul>
+                    <div align ="right">
+                        <p>
+                            Stay in touch ! Join out Newsletter 
+    
+                        </p>
+                        <br>
+                    </div>
+                    <ul style="	padding-left: 18px;margin: 0;overflow: hidden;">
+                        <li style="	float: left;list-style-type: none;padding: 10px;">
+                                <a href=""></a>
+                        </li>
+                        <li class="listsampingkiri">   
+                         <i class="fa fa-cc-visa" style="font-size:24px"></i>
+                       </li>
+                        <li class="listsampingkiri"><i class="fa fa-cc-mastercard" style="font-size:24px"></i></li>
+                        <li class="listsampingkiri"> <i class="fa fa-cc-amex" style="font-size:24px"></i></li>
+                        <div align="right">
+                            <form action=" formulir.html" method="get">
+                                <input type="text" name="Email" id="Email" placeholder="Enter Email" size="20"/>
+                                <button type="submit" class="btn btn  btn-sm" style="margin-top: -5px; background-color: gray;">Subscribe</button>
+                                </form>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      
+</body>
+</html>
