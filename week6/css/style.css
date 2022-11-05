@@ -1,0 +1,37 @@
+body{
+    background-color: coral;
+}
+#header{
+    text-align: center;
+    background-color: burlywood;
+    padding: 10px;
+}
+#header h1{
+    color:blue;
+}
+#header blockquote{
+    background-color: yellow;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-direction: row;
+    gap: 10px;
+}
+.gambar{
+    text-align: center;
+}
+.gambar img{
+    width: 20%;
+}
+.fp::first-letter{
+    font-size: 50px;
+    color: blue;
+}
+.koleksi{
+    text-align: center;
+}
+.koleksi img{
+    width: 20%;
+}
