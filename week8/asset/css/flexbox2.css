@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+#main{
+    display: flex;
+    flex: 1;
+}
+header, footer{
+    background-color: orange;
+    height: 20vh;
+}
+#main > article{
+    flex: 1;
+    order: 1;
+}
+#main > nav
+#main > aside{
+    flex: 0 0 20vw;
+}
+
+#main > aside{
+    background-color: aqua;
+    order: 2;
+}
+#main > nav{
+    background-color: yellowgreen;
+    order: 3;
+}
+header, footer, article, aside, nav{
+    padding: 1em;
+}

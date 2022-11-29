@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    display: flex;
+}
+#main{
+    display: flex;
+}
+#main > article{
+    min-height: 60vh;
+    flex: 1;
+    order: 1;
+}
+
+#main > aside{
+    flex: 0 0 20vw;
+    background-color: aquamarine;
+    order: 2;
+}
+.isi{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.isi > footer, header{
+    height: 20vh;
+    background-color: lightgrey;
+}

@@ -1,0 +1,49 @@
+*{
+    color: white;
+    font-weight: bolder;
+}
+body{
+    padding: 0;
+}
+header, footer, article, nav, aside{
+    padding: 1em;
+    margin:0.4em;
+}
+header, footer{
+    background-color: lightskyblue;
+    text-align: center;
+}
+img{
+    margin: 2px;
+    height: 12vw;
+}
+.container{
+    display: flex;
+    padding: 1.5vh;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+.isi {
+    display: flex;
+    flex: 1;
+}
+.isi >aside{
+    display: flex;
+    order: 1;
+    flex: 0 0 15vw;
+    margin:0.4em;
+    background-color:darkcyan;
+    justify-content: center;
+    align-items: center;
+}
+.isi > article{
+    display: flex;
+    flex: 1;
+    order: 2;
+    background-color: aqua;
+    flex-direction: column;
+    margin:0.4em;
+    justify-content: flex-end;
+    align-items: center;
+}
