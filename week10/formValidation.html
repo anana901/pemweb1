@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" id="form" onsubmit="kirim()" action="hasilformValidation">
+        <div>
+            <table>
+                <div>
+                <tr>
+                    <td><label for="nama">Nama Pelanggan</label></td>
+                    <td><input type="text" id="nama" maxlength="30"></td>
+                    <div class="error"></div>
+                </tr>
+                </div>
+                <div>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="text" name="" id="email"></td>
+                    <div class="error"></div>
+                </tr>
+                </div>
+                <div>
+                <tr>
+                    <td><label for="jam">Jam Keberangkatan</label></td>
+                    <td><input type="time" name="" id="jam"></td>
+                    <div class="error"></div>
+                </tr>
+                </div>
+                <div>
+                <tr>
+                    <td><label for="tujuan">Tujuan Keberangkatan</label></td>
+                    <td><input type="text" name="" id="tujuan"></td>
+                    <div class="error"></div>
+                </tr>
+                </div>
+                <div>
+                <tr>
+                    <td><label for="tiket">Jumlah Tiket</label></td>
+                    <td><input type="number" name="" id="tiket"></td>
+                    <div class="error"></div>
+                </tr>
+                </div>
+                <tr>
+                    <td colspan="2"><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <script>
+
+    function kirim(){
+        let form = document.getElementById("form");
+        let nama = document.getElementById("nama").value;
+        let email = document.getElementById("email").value;
+        let jam = document.getElementById("jam").value;
+        let tujuan = document.getElementById("tujuan").value;
+        let tiket = document.getElementById("tiket").value;
+
+        if(nama == ''){
+            window.alert("Nama harus diisi");
+        }
+        else if(email == ''){
+            window.alert("Email harus diisi");
+        }
+        else if(jam == ''){
+            window.alert("Jam keberangkatan harus diisi");
+        }
+        else if(tujuan == ''){
+            window.alert("Tujuan keberangkatan harus diisi");
+        }
+        else if(tiket == ''){
+            window.alert("Jumlah tiket harus diisi");
+        }
+        else if (isNaN(tiket) || tiket < 1 || tiket > 10) {
+                window.alert("Jumlah tiket tidak bisa lebih dari 10");
+            } 
+        else{
+            form.setAttribute("action","hasilformValidation.html")
+            window.alert("Login Berhasil");
+        }
+    }
+
+
+    </script>
+</body>
+</html>
