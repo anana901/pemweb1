@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get element</title>
+</head>
+<body>
+    <h1>Belajar DOM Javascript</h1>
+
+    <div id="box"></div>
+    
+    <div class="boks"></div>
+    <div class="boks"></div>
+    <div class="boks"></div>
+
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+
+    <script>
+        let box = document.getElementById('box');
+        let boks = document.getElementsByClassName('boks');
+
+        box.innerHTML = "Document Object Model JS";
+        boks[0].innerHTML = "Ayam";
+        boks[1].innerHTML = "Kucing";
+        boks[2].innerHTML = "Kambing";
+
+
+        let li = document.getElementsByTagName("li");
+        li[0].innerHTML = "Boostrap";
+        li[1].innerHTML = "PHP";
+        li[2].innerHTML = "Python";
+        
+    </script>
+</body>
+</html>
